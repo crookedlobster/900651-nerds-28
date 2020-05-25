@@ -27,7 +27,7 @@
     <main>
       <h1>Магазин готовых шаблонов</h1>
       <section>
-        <h2>Фильтр товаров</h2>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="" action="https://echo.htmlacademy.ru/" method="get">
           <!-- <input type="range" name="" value=""> -->
           <fieldset>
@@ -76,19 +76,19 @@
         </form>
       </section>
       <section>
-        <h2>Сортировка товаров</h2>
+        <h2 class="visually-hidden">Сортировка товаров</h2>
         <h3>Сортировать</h3>
         <ul>
           <li><button type="button" name="sort-price">по цене</button>
           </li>
           <li><button type="button" name="sort-type">по типу</button> </li>
           <li><button type="button" name="sort-name">по названию</button> </li>
-          <li><button type="button" name="sort-pointer-down">Вниз</button> </li>
-          <li><button type="button" name="sort-pointer-up">вверх</button> </li>
+          <li><button type="button" name="sort-pointer-down" aria-label="Стрелка вниз"></button> </li>
+          <li><button type="button" name="sort-pointer-up" aria-label="Стрелка вверх"></button> </li>
         </ul>
       </section>
       <section class="product-cards">
-        <h2>Варианты шаблонов</h2>
+        <h2 class="visually-hidden">Варианты шаблонов</h2>
         <ul>
           <li>
             <img src="img/img-sedona.jpg" width="360" height="580" alt="Шаблон страницы сайта для туристов «Sedona»">
@@ -145,7 +145,7 @@
     </main>
     <footer>
       <section class="map-contacts">
-        <h2>Адрес</h2>
+        <h2 class="visually-hidden">Адрес</h2>
         <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург,<br>
@@ -154,7 +154,7 @@
         </p>
       </section>
       <section class="social-icons">
-        <h3>Мы в социальных сетях</h3>
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <ul>
           <li><a href="https://vk.com/">Вконтакте</a></li>
           <li><a href="https://ru-ru.facebook.com/">Фэйсбук</a></li>
@@ -183,6 +183,6 @@
         </p>
         <input type="submit" value="Отправить">
       </form>
-      <button type="button" name="close-popup">Закрыть</button>
+      <button type="button" name="close-popup" aria-label="Закрыть"></button>
     </section>
   </body>
