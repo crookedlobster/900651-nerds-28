@@ -51,7 +51,7 @@
       </section>
       <article class="company-description">
         <h2>Описание компании</h2>
-          <p><strong>Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
+          <p><strong>Мы — маленькая, но гордая  дизайн-студия из Краснодара.</strong></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p><b>Выполняем заказы на разработку:</b></p>
           <ul class="work-types">
@@ -118,7 +118,21 @@
     </footer>
     <section>
       <h2>Напишите нам</h2>
-      <!-- Здесь будет форма отправки данных -->
+      <form class="https://echo.htmlacademy.ru/" action="index.html" method="post">
+        <p>
+          <label for="name-data">Ваше имя</label>
+          <input type="text" id="name-data" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" name="email-data" placeholder="email@example.com" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="message">Текст письма</label>
+          <textarea id="message" name="text" rows="5" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+      </form>
       <button type="button" name="close-popup">Закрыть</button>
     </section>
   </body>
