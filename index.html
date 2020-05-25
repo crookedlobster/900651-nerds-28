@@ -20,15 +20,15 @@
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
-          <a href="">Корзина</a>
+          <a href="" title="Корзина">Корзина</a>
         </nav>
       </div>
     </header>
     <main>
-      <h1>Дизайн-студия «Нёрдс»</h1>
+      <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
       <section class="advantages">
-        <h2>Преимущества</h2>
-        <ul class="">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul>
           <li>
             <img src="img/notebook.png" width="300" height="146" alt="Ноутбук с изображением вашего сайта">
             <h3>веб-сайты</h3>
@@ -50,8 +50,8 @@
         </ul>
       </section>
       <article class="company-description">
-        <h2>Описание компании</h2>
-          <p><strong>Мы — маленькая, но гордая дизайн-студия из Краснодара.</strong></p>
+        <h2 class="visually-hidden">Описание компании</h2>
+          <p><strong>Мы — маленькая, но гордая  дизайн-студия из Краснодара.</strong></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p><b>Выполняем заказы на разработку:</b></p>
           <ul class="work-types">
@@ -75,26 +75,26 @@
         </table>
       </article>
       <article class="partners">
-        <h3>Наши партнеры</h3>
+        <h3 class="visually-hidden">Наши партнеры</h3>
         <ul>
           <li>
-            <a href=""> <img src="img/logo-html-academy.png" width="199" height="68" alt="Логотип «HTML Academy»">html academy</a>
+            <a href=""> <img src="img/logo-html-academy.png" width="199" height="68" alt="Логотип «HTML Academy»"></a>
           </li>
           <li>
-            <a href=""><img src="img/logo-borodinski.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»">Бородинский </a>
+            <a href=""><img src="img/logo-borodinski.png" width="209" height="90" alt="Логотип барбершопа «Бородинский»"></a>
           </li>
           <li>
-            <a href=""><img src="img/logo-pink.png" width="185" height="52" alt="Логотип «Pink App»">Pink App</a>
+            <a href=""><img src="img/logo-pink.png" width="185" height="52" alt="Логотип «Pink App»"></a>
           </li>
           <li>
-            <a href=""><img src="img/logo-mishka.png" width="173" height="84" alt="Логотип уши в кустах подпись «Mishka»">Mishka</a>
+            <a href=""><img src="img/logo-mishka.png" width="173" height="84" alt="Логотип уши в кустах подпись «Mishka»"></a>
           </li>
         </ul>
       </article>
     </main>
     <footer>
       <section class="map-contacts">
-        <h2>Адрес</h2>
+        <h2 class="visually-hidden">Адрес</h2>
         <img src="img/map-marker.png" width="231" height="190" alt="Указатель нашего расположения на карте">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург,<br>
@@ -104,12 +104,16 @@
         <button type="button" name="write us">Напишите нам</button>
       </section>
       <section class="social-icons">
-        <h3>Мы в социальных сетях</h3>
+        <h3 class="visually-hidden">Мы в социальных сетях</h3>
         <ul>
-          <li><a href="https://vk.com/">Вконтакте</a></li>
-          <li><a href="https://ru-ru.facebook.com/">Фэйсбук</a></li>
-          <li><a href="https://www.instagram.com/">Инстаграм</a></li>
-        </ul>
+          <li>
+            <a href="https://vk.com/" title="Вконтакте" aria-label="Вконтакте"></a>
+          </li>
+          <li>
+            <a href="https://ru-ru.facebook.com/" title="Фэйсбук" aria-label="Фэйсбук"></a></li>
+          <li>
+            <a href="https://www.instagram.com/" title="Инстаграм" aria-label="Инстаграм"></a>
+          </li>
       </section>
       <section class="discount">
         <h3>Давайте дружить, это выгодно!</h3>
@@ -118,8 +122,22 @@
     </footer>
     <section>
       <h2>Напишите нам</h2>
-      <!-- Здесь будет форма отправки данных -->
-      <button type="button" name="close-popup">Закрыть</button>
+      <form class="https://echo.htmlacademy.ru/" action="index.html" method="post">
+        <p>
+          <label for="name-data">Ваше имя</label>
+          <input type="text" id="name-data" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" name="email-data" placeholder="email@example.com" autocomplete="on" required>
+        </p>
+        <p>
+          <label for="message">Текст письма</label>
+          <textarea id="message" name="text" rows="5" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
+        <input type="submit" value="Отправить">
+      </form>
+      <button type="button" name="close-popup" aria-label="Закрыть окно"></button>
     </section>
   </body>
 </html>
