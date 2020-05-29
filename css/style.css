@@ -42,7 +42,7 @@ body {
 }
 
 ul {
-  display: none;
+  list-style: none;
 }
 
 img {
