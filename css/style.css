@@ -9,19 +9,22 @@
   --border-grey600: #DBDBDB;
 
   --accent-grey100: #A6A6A6;
-  --accent-grey200: #666;
 
   --black100: #4D4D4D;
   --black200: #000;
   --black300: #283136;
   --black400: #444;
   --black500: #231F20;
+  --black600: #666;
+
 
   --red100: #FB565A;
   --red200: #E74246;
   --red300: #D7373B;
 
   --white100: #FFF;
+
+  --button-active-color: rgba(255, 255, 255, 0.3);
 
   --green100: #00CA74;
   --green200: #00BC6C;
@@ -32,12 +35,13 @@
   --yellow300: #E5A722;
 }
 
+/* Global */
 
 body {
-  max-width: 1440px;
+  min-width: 1460px;
   margin: 0px;
   padding: 0px;
-  font-family: "Roboto", "Arial"
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
 }
 
@@ -47,4 +51,152 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+.red-button {
+  background-color: var(--red100);
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--white100, white);
+  border-style: none;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--red200, tomato);
+  outline: none;
+}
+
+.button:active {
+  background-color: var(--red300, darkred);
+  color: var(--button-active-color, white);
+  outline: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* Page header */
+
+.main-header {
+  background-color: var(--basic-grey100, grey);
+}
+
+.main-header-menu {
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.main-header-logo:focus {
+  outline: none;
+
+}
+
+.site-navigation a {
+  text-decoration-line: none;
+  color: var(--black200, black);
+}
+
+.site-navigation a:hover {
+  color: var(--red100, red);
+}
+
+.site-navigation a:focus {
+  border-bottom: 2px solid var(--red100, red);
+  outline: none;
+}
+
+.site-navigation a:active {
+  color: var(--black200);
+  opacity: 0.3;
+  border-bottom: 0px;
+  outline: none;
+}
+
+.site-navigation a.navigation-basket {
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  opacity: 1;
+}
+
+/* footer */
+
+.main-footer {
+  background-color: var(--white100, white);
+}
+
+.map-contacts {
+  background-color: var(--white100, white);
+  text-align: center;
+}
+
+.map-contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.map-contacts p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.map-contacts a {
+  text-decoration-line: none;
+  color: var(--black600);
+}
+
+.social-contacts {
+  background-color: var(--white100);
+}
+
+.social-icons a {
+  background-color: var(--basic-grey300);
+  border: 0px;
+  border-radius: 50%;
+}
+
+ .vk-icon a {
+  padding: 33px 28px 33px 27px;
+}
+
+.facebook-icon a {
+  padding: 31px 34px 28px 35px;
+}
+
+.insta-icon a {
+  padding: 30px;
+}
+
+.discount h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+
+  color: var(--black200, black);
+}
+
+.discount p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--black400, black);
 }
