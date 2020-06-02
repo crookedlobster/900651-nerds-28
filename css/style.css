@@ -53,6 +53,8 @@ img {
   max-width: 100%;
 }
 
+/* Button */
+
 .red-button {
   background-color: var(--red100);
 }
@@ -103,9 +105,6 @@ img {
   line-height: 30px;
   font-weight: 500;
 }
-
-.main-header-logo:focus {
-  outline: none;
 
 }
 
@@ -174,6 +173,7 @@ img {
   border-radius: 50%;
 }
 
+
  .vk-icon a {
   padding: 33px 28px 33px 27px;
 }
@@ -199,4 +199,55 @@ img {
   font-weight: 400;
   line-height: 22px;
   color: var(--black400, black);
+}
+
+/* popup */
+
+.popup-window {
+  background-color: var(--white100, white);
+}
+
+.popup-window h2 {
+  color: var(--black200, black);
+}
+
+.popup-form label {
+  color: var (--black200);
+  font-weight: 700;
+}
+
+
+
+.popup-form input:not([type="submit"]),
+.popup-form textarea {
+  border: 2px solid var(--border-grey100, grey);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.popup-form input:not([type="submit"]):hover,
+.popup-form textarea:hover {
+  border-color: var(--border-color200, lightgrey);
+}
+
+.popup-form input:not([type="submit"]):active,
+.popup-form input:not([type="submit"]):focus,
+.popup-form textarea:active,
+.popup-form textarea:focus {
+  color: var(--black400);
+  border-color: var(--black200, black);
+  opacity: 1;
+  outline: none;
+}
+
+.popup-form input::placeholder,
+.popup-form textarea::placeholder {
+  color: var(--grey400);
+  background-color: inherit;
+  opacity: 0.5;
+}
+
+.popup-window button{
+  background-color: transparent;
+  background-image: url(../img/close-cross.svg);
 }
