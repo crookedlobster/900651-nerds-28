@@ -55,9 +55,6 @@ img {
 
 /* Button */
 
-.red-button {
-  background-color: var(--red100);
-}
 
 .button {
   font-size: 16px;
@@ -70,16 +67,63 @@ img {
 
 .button:hover,
 .button:focus {
-  background-color: var(--red200, tomato);
   outline: none;
 }
 
 .button:active {
-  background-color: var(--red300, darkred);
   color: var(--button-active-color, white);
   outline: none;
 }
 
+.red-button {
+  background-color: var(--red100);
+}
+
+.red-button:hover,
+.red-button:focus {
+  background-color: var(--red200, tomato);
+}
+
+.red-button:active {
+  background-color: var(--red300, darkred);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--red200, tomato);
+}
+
+.social-button:active {
+  background-color: var(--red300, darkred);
+}
+
+.yellow-button {
+  background-color: var(--yellow100);
+}
+
+.yellow-button:hover,
+.yellow-button:active {
+  background-color: var(--yellow200);
+}
+
+.yellow-button:active {
+  background-color: var(--yellow300);
+}
+
+.green-button {
+  background-color: var(--green100);
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: var(--green200);
+}
+
+.green-button:active {
+  background-color: var(--green300);
+}
+
+/* visually hidden */
 
 .visually-hidden {
   position: absolute;
@@ -95,7 +139,7 @@ img {
 
 /* Page header */
 
-.main-header {
+.page-header {
   background-color: var(--basic-grey100, grey);
 }
 
@@ -104,8 +148,6 @@ img {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-}
-
 }
 
 .site-navigation a {
@@ -134,6 +176,21 @@ img {
   background-repeat: no-repeat;
   padding-left: 20px;
   opacity: 1;
+}
+
+/* main index */
+
+/* advantages */
+
+.advantages-item h3{
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--black200);
+}
+
+.advantages-item p.advantages-facts {
+
 }
 
 /* footer */
@@ -215,8 +272,6 @@ img {
   color: var (--black200);
   font-weight: 700;
 }
-
-
 
 .popup-form input:not([type="submit"]),
 .popup-form textarea {
