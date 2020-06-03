@@ -154,6 +154,10 @@ img {
   font-weight: 500;
 }
 
+.header-logo {
+  outline: none;
+}
+
 .site-navigation a {
   text-decoration-line: none;
   color: var(--black200, black);
@@ -253,7 +257,26 @@ main.index-content {
   color: var(--black300, black);
 }
 
-.
+/* Partners */
+
+.partners {
+  border-top: 2px solid var(--basic-grey100, grey);
+  border-bottom: 2px solid var(--basic-grey100, grey);
+}
+
+.partners-list-item a {
+  opacity: 0.2;
+}
+
+.partners-list-item a:hover,
+.partners-list-item a:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.partners-list-item a:active {
+  opacity: 0.1;
+}
 
 /* footer */
 
