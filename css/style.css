@@ -76,7 +76,7 @@ img {
 }
 
 .red-button {
-  background-color: var(--red100);
+  background-color: var(--red100, red);
 }
 
 .red-button:hover,
@@ -97,30 +97,34 @@ img {
   background-color: var(--red300, darkred);
 }
 
+.social-button:active svg{
+  opacity: 0.3;
+}
+
 .yellow-button {
-  background-color: var(--yellow100);
+  background-color: var(--yellow100, lightyellow);
 }
 
 .yellow-button:hover,
 .yellow-button:active {
-  background-color: var(--yellow200);
+  background-color: var(--yellow200, yellow);
 }
 
 .yellow-button:active {
-  background-color: var(--yellow300);
+  background-color: var(--yellow300. gold);
 }
 
 .green-button {
-  background-color: var(--green100);
+  background-color: var(--green100, forestgreen);
 }
 
 .green-button:hover,
 .green-button:focus {
-  background-color: var(--green200);
+  background-color: var(--green200, green);
 }
 
 .green-button:active {
-  background-color: var(--green300);
+  background-color: var(--green300, darkgreen);
 }
 
 /* visually hidden */
@@ -165,7 +169,7 @@ img {
 }
 
 .site-navigation a:active {
-  color: var(--black200);
+  color: var(--black200, black);
   opacity: 0.3;
   border-bottom: 0px;
   outline: none;
@@ -180,20 +184,76 @@ img {
 
 /* main index */
 
+main.index-content {
+  background-color: var(--white100, white);
+}
+
 /* advantages */
 
 .advantages-item h3{
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--black200);
+  color: var(--black200, black);
 }
 
 .advantages-item p.advantages-facts {
   font-weight: 400;
   line-height: 24px;
-  color: var(--black300);
+  color: var(--black300, black);
 }
+
+/* Company description */
+
+.company-description {
+  border-top: 2px solid var(--basic-grey100, grey);
+}
+
+.description-about-us strong {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: var(--black200, black);
+}
+
+.description-targets {
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--black300, black);
+}
+
+.work-caption b {
+  font-weight: 700;
+  color: var(--black300, black);
+  text-transform: uppercase;
+}
+
+/* как научусь рисовать svg, переделаю линии повыше*/
+.work-types li {
+  font-weight: 400;
+  color: var(--black300);
+  list-style-image: url("../img/list-marker.svg");
+}
+
+.description-skills caption {
+  font-weight: 700;
+  color: var(--black200, black);
+  text-transform: uppercase;
+}
+
+.description-skills th {
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--black200, black);
+}
+
+.description-skills td {
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--black300, black);
+}
+
+.
 
 /* footer */
 
@@ -219,15 +279,15 @@ img {
 
 .map-contacts a {
   text-decoration-line: none;
-  color: var(--black600);
+  color: var(--black600, black);
 }
 
 .social-contacts {
-  background-color: var(--white100);
+  background-color: var(--white100, white);
 }
 
 .social-icons a {
-  background-color: var(--basic-grey300);
+  background-color: var(--basic-grey300, grey);
   border: 0px;
   border-radius: 50%;
 }
@@ -291,7 +351,7 @@ img {
 .popup-form input:not([type="submit"]):focus,
 .popup-form textarea:active,
 .popup-form textarea:focus {
-  color: var(--black400);
+  color: var(--black400, black);
   border-color: var(--black200, black);
   opacity: 1;
   outline: none;
@@ -299,7 +359,7 @@ img {
 
 .popup-form input::placeholder,
 .popup-form textarea::placeholder {
-  color: var(--grey400);
+  color: var(--grey400, grey);
   background-color: inherit;
   opacity: 0.5;
 }
