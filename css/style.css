@@ -60,9 +60,9 @@ img {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: var(--white100, white);
   border-style: none;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .button:hover,
@@ -77,6 +77,7 @@ img {
 
 .red-button {
   background-color: var(--red100, red);
+  color: var(--white100, white);
 }
 
 .red-button:hover,
@@ -86,6 +87,10 @@ img {
 
 .red-button:active {
   background-color: var(--red300, darkred);
+}
+
+.social-button {
+  background-color: var(--basic-grey300, grey);
 }
 
 .social-button:hover,
@@ -103,6 +108,7 @@ img {
 
 .yellow-button {
   background-color: var(--yellow100, lightyellow);
+  color: var(--white100, white);
 }
 
 .yellow-button:hover,
@@ -116,6 +122,7 @@ img {
 
 .green-button {
   background-color: var(--green100, forestgreen);
+  color: var(--white100, white);
 }
 
 .green-button:hover,
@@ -125,6 +132,20 @@ img {
 
 .green-button:active {
   background-color: var(--green300, darkgreen);
+}
+
+.grey-button {
+  background-color: var(--basic-grey100, lightgrey);
+  color: var(--black200, black);
+}
+
+.grey-button:hover,
+.grey-button:focus {
+  background-color: var(--basic-grey200, grey);
+}
+
+.grey-button:active {
+  background-color: var(--basic-grey400, darkgrey);
 }
 
 /* visually hidden */
@@ -278,6 +299,53 @@ main.index-content {
   opacity: 0.1;
 }
 
+/* main catalog */
+
+.catalog-content {
+  background-color: var(--white100, white);
+}
+
+.catalog-content h1 {
+  background-color: var(--basic-grey100, grey);
+  color: var(--black200, black);
+  font-size: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* filters */
+
+.filter-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black200, black);
+  text-transform: uppercase;
+}
+
+/* filter grid */
+
+.filter-grid label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black300, black);
+}
+
+/* filter features */
+
+.filter-features label {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black300, black);
+}
+
+.view-button[type="value"]:active {
+  opacity: 0.3;
+}
+
+/* Product cards */
+
+
+
 /* footer */
 
 .page-footer {
@@ -310,7 +378,6 @@ main.index-content {
 }
 
 .social-icons a {
-  background-color: var(--basic-grey300, grey);
   border: 0px;
   border-radius: 50%;
 }
