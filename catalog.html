@@ -146,41 +146,48 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="page-footer">
       <section class="map-contacts">
         <h2 class="visually-hidden">Адрес</h2>
-        <img src="img/map-marker.png" width="231" height="190" alt="Указатель на карте">
+        <img src="img/map-marker.png" width="231" height="190" alt="Указатель нашего расположения на карте">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д. 19/8  
-         <a href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a>
+           ул. Б. Конюшенная, д. 19/8  <br><br>
+          <a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
         </p>
+        <button class="button red-button" type="button" name="write us"><span class="button-label">Напишите нам</button>
       </section>
-      <section class="social-icons">
+      <section class="social-contacts">
         <h3 class="visually-hidden">Мы в социальных сетях</h3>
-        <ul>
-          <li>
-            <a href="https://vk.com/" title="Вконтакте" aria-label="Вконтакте"></a>
+        <ul class="social-icons">
+          <li class="vk-icon">
+            <a href="https://vk.com/" class="button social-button" title="Вконтакте" aria-label="Вконтакте">
+              <svg width="26" height="15"><path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" fill="#fff"/></svg>
+            </a>
           </li>
-          <li>
-            <a href="https://ru-ru.facebook.com/" title="Фэйсбук" aria-label="Фэйсбук"></a>
+          <li class="facebook-icon">
+            <a href="https://ru-ru.facebook.com/" class="button social-button" title="Фэйсбук" aria-label="Фэйсбук">
+              <svg width="12" height="22"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/></svg>
+            </a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/" title="Инстаграм" aria-label="Инстаграм"></a>
+          <li class="instagram-icon">
+            <a href="https://www.instagram.com/" class="button social-button" title="Инстаграм" aria-label="Инстаграм">
+              <svg width="21" height="21"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/></svg>
+            </a>
           </li>
-        </ul>
       </section>
       <section class="discount">
         <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
-    <section>
+    <section class="popup-window">
       <h2>Напишите нам</h2>
-      <form class="https://echo.htmlacademy.ru/" action="index.html" method="post">
+      <form class="popup-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label for="name-data">Ваше имя</label>
-          <input type="text" id="name-data" name="name" placeholder="Имя Фамилия" autocomplete="on" required>
+          <input type="text" id="name-data" name="name"  autocomplete="on" placeholder="Имя Фамилия"
+          pattern="[A-Za-zА-Яа-я]*" required>
         </p>
         <p>
           <label for="email">Ваш email</label>
@@ -190,8 +197,9 @@
           <label for="message">Текст письма</label>
           <textarea id="message" name="text" rows="5" cols="80" placeholder="В свободной форме"></textarea>
         </p>
-        <input type="submit" value="Отправить">
+        <input type="submit" class="button red-button" value="Отправить">
       </form>
-      <button type="button" name="close-popup" aria-label="Закрыть"></button>
+      <button type="button" name="close-popup" aria-label="Закрыть окно"></button>
     </section>
   </body>
+</html>
