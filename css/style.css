@@ -344,7 +344,27 @@ main.index-content {
 
 /* Product cards */
 
+/* Примерная стилизация для следующего урока
+.cards-item::before {
+  background-color: var(--white100, white);
+  padding: 20px;
+  margin: 10px;
+  content: '';
+  border: 10px solid var(--black100, black);
+  border-radius: 50% 50%;
+} */
 
+
+.cards-name a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black200, black);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+
+}
 
 /* footer */
 
