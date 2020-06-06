@@ -354,6 +354,9 @@ main.index-content {
   border-radius: 50% 50%;
 } */
 
+.cards-item {
+  background-color: var(--basic-grey100, lightgrey);
+}
 
 .cards-name a {
   font-size: 18px;
@@ -363,7 +366,22 @@ main.index-content {
   text-align: center;
   text-decoration: none;
   outline: none;
+}
 
+.cards-name a:hover,
+.cards-name a:focus {
+  color: var(--red100, red);
+}
+
+.cards-name a:active {
+  color: var(--black200; black);
+  opacity: 0.3;
+}
+
+.cards-item p {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black600, black);
 }
 
 /* footer */
