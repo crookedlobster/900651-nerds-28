@@ -40,6 +40,10 @@
   --font-size-l: 36px;
   --font-size-xl: 45px;
   --font-size-xxl: 55px;
+
+  --font-weight-s: 400;
+  --font-weight-m: 500;
+  --font-weight-l: 700;
 }
 
 /* Global */
@@ -68,7 +72,7 @@ img {
 .button {
   font-size: var(--font-size-xs);
   line-height: 18px;
-  font-weight: 500;
+  font-weight: var(--font-weight-m);
   border-style: none;
   border-radius: 3px;
   text-decoration: none;
@@ -175,7 +179,7 @@ img {
   background-color: transparent;
   font-size: var(--font-size-xs);
   line-height: 30px;
-  font-weight: 500;
+  font-weight: var(--font-weight-m);
 }
 
 .header-logo {
@@ -217,13 +221,13 @@ main.index-content {
 
 .advantages-item h3{
   font-size: var(--font-size-m);
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   text-transform: uppercase;
   color: var(--black200, black);
 }
 
 .advantages-item p.advantages-facts {
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   line-height: 24px;
   color: var(--black300, black);
 }
@@ -236,44 +240,44 @@ main.index-content {
 
 .description-about-us strong {
   font-size: var(--font-size-xl);
-  font-weight: 500;
+  font-weight: var(--font-weight-m);
   line-height: 45px;
   color: var(--black200, black);
 }
 
 .description-targets {
   line-height: 24px;
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   color: var(--black300, black);
 }
 
 .work-caption b {
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   color: var(--black300, black);
   text-transform: uppercase;
 }
 
 /* как научусь рисовать svg, переделаю линии повыше*/
 .work-types li {
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   color: var(--black300);
   list-style-image: url("../img/list-marker.svg");
 }
 
 .description-skills caption {
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   color: var(--black200, black);
   text-transform: uppercase;
 }
 
 .description-skills th {
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   font-size: var(--font-size-xl);
   color: var(--black200, black);
 }
 
 .description-skills td {
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   line-height: 18px;
   color: var(--black300, black);
 }
@@ -308,7 +312,7 @@ main.index-content {
   background-color: var(--basic-grey100, grey);
   color: var(--black200, black);
   font-size: var(--font-size-xxl);
-  font-weight: 500;
+  font-weight: var(--font-weight-m);
   text-align: center;
 }
 
@@ -316,7 +320,7 @@ main.index-content {
 
 .filter-name {
   font-size: var(--font-size-s);
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   color: var(--black200, black);
   text-transform: uppercase;
 }
@@ -325,7 +329,7 @@ main.index-content {
 
 .filter-grid label {
   font-size: var(--font-size-xs);
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   color: var(--black300, black);
 }
 
@@ -333,7 +337,7 @@ main.index-content {
 
 .filter-features label {
   font-size: var(font-size-xs);
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   color: var(--black300, black);
 }
 
@@ -359,7 +363,7 @@ main.index-content {
 
 .cards-name a {
   font-size: var(--font-size-s);
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   color: var(--black200, black);
   text-transform: uppercase;
   text-align: center;
@@ -396,7 +400,7 @@ main.index-content {
 .map-contacts h3 {
   font-size: var(--font-size-s);
   line-height: 30px;
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
 }
 
 .map-contacts p {
@@ -433,7 +437,7 @@ main.index-content {
 
 .discount h3 {
   font-size: var(--font-size-l);
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
   line-height: 36px;
 
   color: var(--black200, black);
@@ -441,7 +445,7 @@ main.index-content {
 
 .discount p {
   font-size: var(--font-size-xs);
-  font-weight: 400;
+  font-weight: var(--font-weight-s);
   line-height: 22px;
   color: var(--black400, black);
 }
@@ -458,7 +462,7 @@ main.index-content {
 
 .popup-form label {
   color: var (--black200);
-  font-weight: 700;
+  font-weight: var(--font-weight-l);
 }
 
 .popup-form input:not([type="submit"]),
