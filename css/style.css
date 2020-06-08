@@ -44,6 +44,13 @@
   --font-weight-s: 400;
   --font-weight-m: 500;
   --font-weight-l: 700;
+
+  --line-height-xs: 18px;
+  --line-height-s: 22px;
+  --line-height-m: 24px;
+  --line-height-l: 30px;
+  --line-height-xl: 36px;
+  --line-height-xxl: 45px;
 }
 
 /* Global */
@@ -71,7 +78,7 @@ img {
 
 .button {
   font-size: var(--font-size-xs);
-  line-height: 18px;
+  line-height: var(--line-height-xs);
   font-weight: var(--font-weight-m);
   border-style: none;
   border-radius: 3px;
@@ -178,7 +185,7 @@ img {
 .header-menu {
   background-color: transparent;
   font-size: var(--font-size-xs);
-  line-height: 30px;
+  line-height: var(--line-height-l);
   font-weight: var(--font-weight-m);
 }
 
@@ -228,7 +235,7 @@ main.index-content {
 
 .advantages-item p.advantages-facts {
   font-weight: var(--font-weight-s);
-  line-height: 24px;
+  line-height: var(--line-height-m);
   color: var(--black300, black);
 }
 
@@ -241,12 +248,12 @@ main.index-content {
 .description-about-us strong {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-m);
-  line-height: 45px;
+  line-height: var(--line-height-xxl);
   color: var(--black200, black);
 }
 
 .description-targets {
-  line-height: 24px;
+  line-height: var(--line-height-m);
   font-weight: var(--font-weight-s);
   color: var(--black300, black);
 }
@@ -278,7 +285,7 @@ main.index-content {
 
 .description-skills td {
   font-weight: var(--font-weight-s);
-  line-height: 18px;
+  line-height: var(--line-height-xs);
   color: var(--black300, black);
 }
 
@@ -382,7 +389,7 @@ main.index-content {
 
 .cards-item p {
   font-size: var(--font-size-xs);
-  line-height: 18px;
+  line-height: var(--line-height-xs);
   color: var(--black600, black);
 }
 
@@ -399,13 +406,13 @@ main.index-content {
 
 .map-contacts h3 {
   font-size: var(--font-size-s);
-  line-height: 30px;
+  line-height: var(--line-height-l);
   font-weight: var(--font-weight-l);
 }
 
 .map-contacts p {
   font-size: var(--font-size-xs);
-  line-height: 18px;
+  line-height: var(--line-height-xs);
 }
 
 .map-contacts a {
@@ -438,7 +445,7 @@ main.index-content {
 .discount h3 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-l);
-  line-height: 36px;
+  line-height: var(--line-height-xl);
 
   color: var(--black200, black);
 }
@@ -446,7 +453,7 @@ main.index-content {
 .discount p {
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-s);
-  line-height: 22px;
+  line-height: var(--line-height-s);
   color: var(--black400, black);
 }
 
