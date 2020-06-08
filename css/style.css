@@ -33,6 +33,13 @@
   --yellow100: #EFC84A;
   --yellow200: #EAB534;
   --yellow300: #E5A722;
+
+  --font-size-xs: 16px;
+  --font-size-s: 18px;
+  --font-size-m: 24px;
+  --font-size-l: 36px;
+  --font-size-xl: 45px;
+  --font-size-xxl: 55px;
 }
 
 /* Global */
@@ -43,7 +50,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size-xs);
 }
 
 img {
@@ -59,7 +66,7 @@ img {
 
 
 .button {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   line-height: 18px;
   font-weight: 500;
   border-style: none;
@@ -166,7 +173,7 @@ img {
 
 .header-menu {
   background-color: transparent;
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   line-height: 30px;
   font-weight: 500;
 }
@@ -209,7 +216,7 @@ main.index-content {
 /* advantages */
 
 .advantages-item h3{
-  font-size: 24px;
+  font-size: var(--font-size-m);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--black200, black);
@@ -228,7 +235,7 @@ main.index-content {
 }
 
 .description-about-us strong {
-  font-size: 45px;
+  font-size: var(--font-size-xl);
   font-weight: 500;
   line-height: 45px;
   color: var(--black200, black);
@@ -261,7 +268,7 @@ main.index-content {
 
 .description-skills th {
   font-weight: 700;
-  font-size: 45px;
+  font-size: var(--font-size-xl);
   color: var(--black200, black);
 }
 
@@ -300,7 +307,7 @@ main.index-content {
 .catalog-content h1 {
   background-color: var(--basic-grey100, grey);
   color: var(--black200, black);
-  font-size: 55px;
+  font-size: var(--font-size-xxl);
   font-weight: 500;
   text-align: center;
 }
@@ -308,7 +315,7 @@ main.index-content {
 /* filters */
 
 .filter-name {
-  font-size: 18px;
+  font-size: var(--font-size-s);
   font-weight: 700;
   color: var(--black200, black);
   text-transform: uppercase;
@@ -317,7 +324,7 @@ main.index-content {
 /* filter grid */
 
 .filter-grid label {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   font-weight: 400;
   color: var(--black300, black);
 }
@@ -325,7 +332,7 @@ main.index-content {
 /* filter features */
 
 .filter-features label {
-  font-size: 16px;
+  font-size: var(font-size-xs);
   font-weight: 400;
   color: var(--black300, black);
 }
@@ -351,7 +358,7 @@ main.index-content {
 }
 
 .cards-name a {
-  font-size: 18px;
+  font-size: var(--font-size-s);
   font-weight: 700;
   color: var(--black200, black);
   text-transform: uppercase;
@@ -370,7 +377,7 @@ main.index-content {
 }
 
 .cards-item p {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   line-height: 18px;
   color: var(--black600, black);
 }
@@ -387,13 +394,13 @@ main.index-content {
 }
 
 .map-contacts h3 {
-  font-size: 18px;
+  font-size: var(--font-size-s);
   line-height: 30px;
   font-weight: 700;
 }
 
 .map-contacts p {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   line-height: 18px;
 }
 
@@ -425,7 +432,7 @@ main.index-content {
 }
 
 .discount h3 {
-  font-size: 36px;
+  font-size: var(--font-size-l);
   font-weight: 700;
   line-height: 36px;
 
@@ -433,7 +440,7 @@ main.index-content {
 }
 
 .discount p {
-  font-size: 16px;
+  font-size: var(--font-size-xs);
   font-weight: 400;
   line-height: 22px;
   color: var(--black400, black);
