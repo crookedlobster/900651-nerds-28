@@ -1,0 +1,506 @@
+:root {
+  --basic-grey100: #EEE;
+  --basic-grey200: #DFDFDF;
+  --basic-grey300: #E1E1E1;
+  --basic-grey400: #D5D5D5;
+
+  --border-grey100: #D7DCDE;
+  --border-grey200: #B4B9BB;
+  --border-grey600: #DBDBDB;
+
+  --accent-grey100: #A6A6A6;
+
+  --black100: #4D4D4D;
+  --black200: #000;
+  --black300: #283136;
+  --black400: #444;
+  --black500: #231F20;
+  --black600: #666;
+
+
+  --red100: #FB565A;
+  --red200: #E74246;
+  --red300: #D7373B;
+
+  --white100: #FFF;
+
+  --button-active-color: rgba(255, 255, 255, 0.3);
+
+  --green100: #00CA74;
+  --green200: #00BC6C;
+  --green300: #00AA62;
+
+  --yellow100: #EFC84A;
+  --yellow200: #EAB534;
+  --yellow300: #E5A722;
+
+  --font-size-xs: 16px;
+  --font-size-s: 18px;
+  --font-size-m: 24px;
+  --font-size-l: 36px;
+  --font-size-xl: 45px;
+  --font-size-xxl: 55px;
+
+  --font-weight-s: 400;
+  --font-weight-m: 500;
+  --font-weight-l: 700;
+
+  --line-height-xs: 18px;
+  --line-height-s: 22px;
+  --line-height-m: 24px;
+  --line-height-l: 30px;
+  --line-height-xl: 36px;
+  --line-height-xxl: 45px;
+}
+
+/* Global */
+
+
+body {
+  min-width: 1460px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: var(--font-size-xs);
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+
+/* Button */
+
+
+.button {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  font-weight: var(--font-weight-m);
+  border-style: none;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.button:active {
+  color: var(--button-active-color, white);
+}
+
+.red-button {
+  background-color: var(--red100, red);
+  color: var(--white100, white);
+}
+
+.red-button:hover,
+.red-button:focus {
+  background-color: var(--red200, tomato);
+}
+
+.red-button:active {
+  background-color: var(--red300, darkred);
+}
+
+.social-button {
+  background-color: var(--basic-grey300, grey);
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--red200, tomato);
+}
+
+.social-button:active {
+  background-color: var(--red300, darkred);
+}
+
+.social-button:active svg{
+  opacity: 0.3;
+}
+
+.yellow-button {
+  background-color: var(--yellow100, lightyellow);
+  color: var(--white100, white);
+}
+
+.yellow-button:hover,
+.yellow-button:active {
+  background-color: var(--yellow200, yellow);
+}
+
+.yellow-button:active {
+  background-color: var(--yellow300. gold);
+}
+
+.green-button {
+  background-color: var(--green100, forestgreen);
+  color: var(--white100, white);
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: var(--green200, green);
+}
+
+.green-button:active {
+  background-color: var(--green300, darkgreen);
+}
+
+.grey-button {
+  background-color: var(--basic-grey100, lightgrey);
+  color: var(--black200, black);
+}
+
+.grey-button:hover,
+.grey-button:focus {
+  background-color: var(--basic-grey200, grey);
+}
+
+.grey-button:active {
+  background-color: var(--basic-grey400, darkgrey);
+}
+
+/* visually hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* Page header */
+
+.page-header {
+  background-color: var(--basic-grey100, grey);
+}
+
+.header-menu {
+  background-color: transparent;
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-l);
+  font-weight: var(--font-weight-m);
+}
+
+.header-logo {
+}
+
+.site-navigation a {
+  text-decoration-line: none;
+  color: var(--black200, black);
+}
+
+.site-navigation a:hover {
+  color: var(--red100, red);
+}
+
+.site-navigation a:focus {
+  border-bottom: 2px solid var(--red100, red);
+}
+
+.site-navigation a:active {
+  color: var(--black200, black);
+  opacity: 0.3;
+  border-bottom: 0px;
+}
+
+.site-navigation a.navigation-basket {
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  opacity: 1;
+}
+
+/* main index */
+
+main.index-content {
+  background-color: var(--white100, white);
+}
+
+/* advantages */
+
+.advantages-item h3{
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-l);
+  text-transform: uppercase;
+  color: var(--black200, black);
+}
+
+.advantages-item p.advantages-facts {
+  font-weight: var(--font-weight-s);
+  line-height: var(--line-height-m);
+  color: var(--black300, black);
+}
+
+/* Company description */
+
+.company-description {
+  border-top: 2px solid var(--basic-grey100, grey);
+}
+
+.description-about-us strong {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-m);
+  line-height: var(--line-height-xxl);
+  color: var(--black200, black);
+}
+
+.description-targets {
+  line-height: var(--line-height-m);
+  font-weight: var(--font-weight-s);
+  color: var(--black300, black);
+}
+
+.work-caption b {
+  font-weight: var(--font-weight-l);
+  color: var(--black300, black);
+  text-transform: uppercase;
+}
+
+/* как научусь рисовать svg, переделаю линии повыше*/
+.work-types li {
+  font-weight: var(--font-weight-s);
+  color: var(--black300);
+  list-style-image: url("../img/list-marker.svg");
+}
+
+.description-skills caption {
+  font-weight: var(--font-weight-l);
+  color: var(--black200, black);
+  text-transform: uppercase;
+}
+
+.description-skills th {
+  font-weight: var(--font-weight-l);
+  font-size: var(--font-size-xl);
+  color: var(--black200, black);
+}
+
+.description-skills td {
+  font-weight: var(--font-weight-s);
+  line-height: var(--line-height-xs);
+  color: var(--black300, black);
+}
+
+/* Partners */
+
+.partners {
+  border-top: 2px solid var(--basic-grey100, grey);
+  border-bottom: 2px solid var(--basic-grey100, grey);
+}
+
+.partners-list-item a {
+  opacity: 0.2;
+}
+
+.partners-list-item a:hover,
+.partners-list-item a:focus {
+  opacity: 1;
+}
+
+.partners-list-item a:active {
+  opacity: 0.1;
+}
+
+/* main catalog */
+
+.catalog-content {
+  background-color: var(--white100, white);
+}
+
+.catalog-content h1 {
+  background-color: var(--basic-grey100, grey);
+  color: var(--black200, black);
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-m);
+  text-align: center;
+}
+
+/* filters */
+
+.filter-name {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-l);
+  color: var(--black200, black);
+  text-transform: uppercase;
+}
+
+/* filter grid */
+
+.filter-grid label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-s);
+  color: var(--black300, black);
+}
+
+/* filter features */
+
+.filter-features label {
+  font-size: var(font-size-xs);
+  font-weight: var(--font-weight-s);
+  color: var(--black300, black);
+}
+
+.view-button[type="value"]:active {
+  opacity: 0.3;
+}
+
+/* Product cards */
+
+/* Примерная стилизация для следующего урока
+.cards-item::before {
+  background-color: var(--white100, white);
+  padding: 20px;
+  margin: 10px;
+  content: '';
+  border: 10px solid var(--black100, black);
+  border-radius: 50% 50%;
+} */
+
+.cards-item {
+  background-color: var(--basic-grey100, lightgrey);
+}
+
+.cards-name a {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-l);
+  color: var(--black200, black);
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cards-name a:hover,
+.cards-name a:focus {
+  color: var(--red100, red);
+}
+
+.cards-name a:active {
+  color: var(--black200; black);
+  opacity: 0.3;
+}
+
+.cards-item p {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  color: var(--black600, black);
+}
+
+/* footer */
+
+.page-footer {
+  background-color: var(--white100, white);
+}
+
+.map-contacts {
+  background-color: var(--white100, white);
+  text-align: center;
+}
+
+.map-contacts h3 {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-l);
+  font-weight: var(--font-weight-l);
+}
+
+.map-contacts p {
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+}
+
+.map-contacts a {
+  text-decoration-line: none;
+  color: var(--black600, black);
+}
+
+.social-contacts {
+  background-color: var(--white100, white);
+}
+
+
+.social-icons a {
+  border: 0px;
+  border-radius: 50%;
+}
+
+.vk-icon a {
+  padding: 33px 28px 33px 27px;
+}
+
+.facebook-icon a {
+  padding: 31px 34px 28px 35px;
+}
+
+.insta-icon a {
+  padding: 30px;
+}
+
+.discount h3 {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-l);
+  line-height: var(--line-height-xl);
+
+  color: var(--black200, black);
+}
+
+.discount p {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-s);
+  line-height: var(--line-height-s);
+  color: var(--black400, black);
+}
+
+/* popup */
+
+.popup-window {
+  background-color: var(--white100, white);
+}
+
+.popup-window h2 {
+  color: var(--black200, black);
+}
+
+.popup-form label {
+  color: var (--black200);
+  font-weight: var(--font-weight-l);
+}
+
+.popup-form input:not([type="submit"]),
+.popup-form textarea {
+  border: 2px solid var(--border-grey100, grey);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+.popup-form input:not([type="submit"]):hover,
+.popup-form textarea:hover {
+  border-color: var(--border-color200, lightgrey);
+}
+
+.popup-form input:not([type="submit"]):active,
+.popup-form input:not([type="submit"]):focus,
+.popup-form textarea:active,
+.popup-form textarea:focus {
+  color: var(--black400, black);
+  border-color: var(--black200, black);
+  opacity: 1;
+}
+
+.popup-form input::placeholder,
+.popup-form textarea::placeholder {
+  color: var(--grey400, grey);
+  background-color: inherit;
+  opacity: 0.5;
+}
+
+.popup-window button{
+  background-color: transparent;
+  background-image: url(../img/close-cross.svg);
+}
