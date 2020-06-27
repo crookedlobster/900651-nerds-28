@@ -55,9 +55,15 @@
 
 /* Global */
 
+.page {
+  height: 100%;
+}
 
 body {
-  min-width: 1460px;
+  min-width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -180,6 +186,12 @@ img {
 
 .page-header {
   background-color: var(--basic-grey100, grey);
+  display: grid;
+
+
+  margin-bottom: 70px;
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
 .header-menu {
@@ -190,6 +202,13 @@ img {
 }
 
 .header-logo {
+  outline: 5px solid red;
+  outline-offset: -5px;
+}
+
+.site-navigation {
+  outline: 5px solid orange;
+  outline-offset: -5px;
 }
 
 .site-navigation a {
@@ -216,6 +235,9 @@ img {
   background-repeat: no-repeat;
   padding-left: 20px;
   opacity: 1;
+
+  outline: 5px solid yellow;
+  outline-offset: -5px;
 }
 
 /* main index */
