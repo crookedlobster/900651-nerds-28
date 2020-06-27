@@ -186,8 +186,10 @@ img {
 
 .page-header {
   background-color: var(--basic-grey100, grey);
-  display: grid;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   margin-bottom: 70px;
   outline: 5px solid green;
@@ -202,11 +204,16 @@ img {
 }
 
 .header-logo {
+  width: 160px;
+  height: 65px;
+
   outline: 5px solid red;
   outline-offset: -5px;
 }
 
 .site-navigation {
+  display: flex;
+
   outline: 5px solid orange;
   outline-offset: -5px;
 }
@@ -230,10 +237,22 @@ img {
   border-bottom: 0px;
 }
 
+.navigation-menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 30px;
+  column-gap: 44px;
+}
+
+/* Не уверен, что это нужно, но на макете именно так. */
+.navigation-menu li:nth-of-type(3) {
+  padding-left: 4px;
+}
+
 .site-navigation a.navigation-basket {
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
-  padding-left: 20px;
+  padding-left: 40px;
   opacity: 1;
 
   outline: 5px solid yellow;
