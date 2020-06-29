@@ -482,6 +482,7 @@ main.index-content {
 .popup-form input:not([type="submit"]):hover,
 .popup-form textarea:hover {
   border-color: var(--border-color200, lightgrey);
+  outline: 5px solid red;
 }
 
 .popup-form input:not([type="submit"]):active,
