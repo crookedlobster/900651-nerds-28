@@ -186,35 +186,30 @@ img {
 
 .page-header {
   background-color: var(--basic-grey100, grey);
-
-  margin-bottom: 70px;
-  outline: 5px solid green;
-  outline-offset: -5px;
 }
 
 .header-menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
   flex-wrap: nowrap;
   background-color: transparent;
+  margin-left: 140px;
+  margin-top: 49px;
   font-size: var(--font-size-xs);
   line-height: var(--line-height-l);
   font-weight: var(--font-weight-m);
 }
 
 .header-logo {
-  width: 160px;
-  height: 65px;
-
-  outline: 5px solid red;
-  outline-offset: -5px;
+  display: flex;
 }
 
 .site-navigation {
   display: flex;
-
+  margin-left: 202px;
+  margin-bottom: 8px;
   outline: 5px solid orange;
   outline-offset: -5px;
 }
@@ -243,16 +238,22 @@ img {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 30px;
   column-gap: 44px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Не уверен, что это нужно, но на макете именно так. */
 .navigation-menu li:nth-of-type(3) {
-  padding-left: 4px;
+  margin-left: 4px;
 }
 
 .site-navigation a.navigation-basket {
+  display: flex;
+  align-items: center;
   background-image: url("../img/cart-icon.svg");
+  background-position: 0;
   background-repeat: no-repeat;
+  margin-left: 245px;
   padding-left: 40px;
   opacity: 1;
 
@@ -270,7 +271,7 @@ main.index-content {
 
 .advantages-list {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: auto auto auto;
   column-gap: 100px;
   padding-left: 140px;
   padding-right: 200px;
@@ -278,7 +279,7 @@ main.index-content {
 }
 
 .advantages-item {
-  width: 300px;
+  /* width: 300px; */
   box-sizing: border-box;
 
 
