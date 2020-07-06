@@ -321,7 +321,7 @@ main.index-content {
 }
 
 .disciption-about-us {
-  display: inline-block;
+
 }
 
 .description-about-us strong {
@@ -332,14 +332,14 @@ main.index-content {
 }
 
 .description-targets {
-  display: inline-block;
+
   line-height: var(--line-height-m);
   font-weight: var(--font-weight-s);
   color: var(--black300, black);
 }
 
 .work-caption {
-  display: inline-block;
+
 }
 
 .work-caption b {
@@ -360,7 +360,7 @@ main.index-content {
 }
 
 .desription-skills {
-  display: inline-block;
+
 }
 
 .description-skills caption {
@@ -490,76 +490,91 @@ main.index-content {
 /* footer */
 
 .page-footer {
-  background-color: var(--white100, white);
-}
-
-.map-contacts {
   display: grid;
+  grid-template-rows: 416px auto;
   background-color: var(--white100, white);
-  text-align: center;
 }
 
 .map-contacts {
-  display: inline-block;
+  background-color: var(--white100, white);
 }
 
 .map-contacts h3 {
-  display: inline-block;
   font-size: var(--font-size-s);
   line-height: var(--line-height-l);
   font-weight: var(--font-weight-l);
 }
 
 .map-contacts p {
-  display: inline-block;
   font-size: var(--font-size-xs);
   line-height: var(--line-height-xs);
 }
 
 .map-contacts a {
-  display: inline-block;
   text-decoration-line: none;
   color: var(--black600, black);
 }
 
-.social-contacts {
-  display: grid;
+.social-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 217px;
+}
 
+.social-contacts {
+  align-self: center;
+  margin-left: 141px;
   background-color: var(--white100, white);
 }
 
 .social-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 9px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .social-icons a {
+  display: flex;
   border: 0px;
   border-radius: 50%;
 }
 
 .vk-icon a {
-  padding: 33px 28px 33px 27px;
+  margin-right: 10px;
+  padding: 31px 26px 31px 25px;
 }
 
 .facebook-icon a {
+  margin-right: 9px;
   padding: 31px 34px 28px 35px;
 }
 
-.insta-icon a {
+.instagram-icon a {
   padding: 30px;
 }
 
+/* discount */
+
+.discount {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 139px;
+}
+
 .discount h3 {
+  margin: 0;
+  margin-bottom: 10px;
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-l);
   line-height: var(--line-height-xl);
-
   color: var(--black200, black);
 }
 
 .discount p {
+  margin: 0;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-s);
   line-height: var(--line-height-s);
