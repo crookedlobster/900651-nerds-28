@@ -410,11 +410,17 @@ main.index-content {
 }
 
 .catalog-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 241px;
   background-color: var(--basic-grey100, grey);
+}
+
+.catalog-caption h1 {
   color: var(--black200, black);
   font-size: var(--font-size-xxl);
   font-weight: var(--font-weight-m);
-  text-align: center;
 }
 
 /* filters */
