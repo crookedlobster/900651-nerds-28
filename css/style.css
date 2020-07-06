@@ -409,7 +409,7 @@ main.index-content {
   background-color: var(--white100, white);
 }
 
-.catalog-content h1 {
+.catalog-caption {
   background-color: var(--basic-grey100, grey);
   color: var(--black200, black);
   font-size: var(--font-size-xxl);
