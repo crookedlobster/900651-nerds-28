@@ -79,6 +79,11 @@ img {
   list-style: none;
 }
 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 /* Button */
 
@@ -211,6 +216,7 @@ img {
   display: flex;
   margin-left: 202px;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .site-navigation a {
@@ -223,7 +229,7 @@ img {
 }
 
 .site-navigation a:focus {
-  border-bottom: 2px solid var(--red100, red);
+  out-bottom: 2px solid var(--red100, red);
 }
 
 .site-navigation a:active {
